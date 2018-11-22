@@ -14,6 +14,6 @@ import java.util.List;
 public interface OpenMensaAPI
 {
 	// example request: GET /canteens/229/days/2017-11-22/meals
-	@GET("canteens/229/days/{date}/meals")
-	Call<List<Meal>> getMeals(@Path("date") String date);
+	@GET("canteens/{id}/days/{date}/meals")
+	Call<List<Meal>> getMeals(@Path("id") int id, @Path("date") String date);
 }

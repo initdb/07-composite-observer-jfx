@@ -54,7 +54,7 @@ class OpenMensaAPITests {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
 		String today = sdf.format(new Date());
 		// TODO prepare call
-		Call<List<Meal>> mealCall = openMensaAPI.getMeals(today);
+		Call<List<Meal>> mealCall = openMensaAPI.getMeals(229 ,today);
 		// TODO execute the call synchronously
 		Response<List<Meal>> mealResponse = mealCall.execute();
 
